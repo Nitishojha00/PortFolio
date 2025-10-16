@@ -1,16 +1,1 @@
-# Ignore node_modules
-node_modules/
-
-# Ignore log files
-*.log
-
-# Ignore .env files
-.env
-
-# Ignore build files
-/dist/
-/build/
-
-# Ignore IDE config files
-.vscode/
-.idea/
+node_modules
