@@ -11,18 +11,26 @@ const Footer = () => {
         {/* <img className="w-32" src={logo} alt="logo" /> */}
         <span class="text-lg font-bold">Nitish Ojha</span>
         <div className="flex gap-4">
+          <a href="https://www.facebook.com/profile.php?id=100089983091610" target="_blank">
           <span className="bannerIcon">
             <FaFacebookF url="https://www.facebook.com/profile.php?id=100089983091610" />
           </span>
+          </a>
+          <a href="https://x.com/nitishojha00" target="_blank">
           <span className="bannerIcon">
             <FaTwitter url="https://x.com/nitishojha00" />
           </span>
+          </a>
+          <a href="https://www.linkedin.com/in/nitishojha00/" target="_blank">
           <span className="bannerIcon">
             <FaLinkedinIn url="https://www.linkedin.com/in/nitishojha00/" />
           </span>
+          </a>
+          <a href="https://github.com/nitishojha00" target="_blank">
           <span className="bannerIcon">
             <FaGithub url="https://github.com/nitishojha00" />
           </span>
+          </a>
         </div>
       </div>
       <div className="w-full h-full">
@@ -38,13 +46,13 @@ const Footer = () => {
           </li>
           <li>
             <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-            <a href="https://daniel-ndeto.github.io/daniel-ndeto-website-portifolio-page/service.html" target="_blank" rel="noopener noreferrer">Services</a>
+            <a href="#testimonial">Services</a>
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
             </span>
           </li>
           <li>
             <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-            <a href="https://daniel-ndeto.github.io/daniel-ndeto-website-portifolio-page/portfolio.html" target="_blank" rel="noopener noreferrer">Portfolio</a>
+            <a href="#home">Portfolio</a>
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
             </span>
           </li>
