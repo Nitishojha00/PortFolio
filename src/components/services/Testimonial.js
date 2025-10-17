@@ -259,7 +259,10 @@ const Testimonial = () => {
         </Slider>
         <div className="flex flex-col justify-center items-center text-center space-y-6">
         <Title title="" />
-        <p>“Providing expert guidance and consultancy for Engineering, JEE preparation, and career counselling to help students succeed.”</p>
+        <p>“Providing expert Web development and web solutions, 
+          along with professional guidance in Engineering, JEE preparation,
+           and career counselling — empowering students and learners to achieve 
+           success in both academics and technology.”</p>
       </div>
 
       </div>
