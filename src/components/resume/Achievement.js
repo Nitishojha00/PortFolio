@@ -13,42 +13,54 @@ const Achievement = () => {
       {/* Company Experience Section */}
       <div>
         <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2022 - 2023</p>
-          <h2 className="text-4xl font-bold">Company Experience</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2022 - Current</p>
+          <h2 className="text-4xl font-bold">Achievements</h2>
         </div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           {/* Each ResumeCard represents a specific achievement or project. */}
           <ResumeCard
-            title="Digital Transformation Initiative"
-            subTitle="Revitalized legacy systems with modern tech."
+          title="JEE Mains AIR 80437"
+          subTitle="Demonstrated strong aptitude and problem-solving skills"
+          result="Success"
+          des="Secured an All India Rank of 80437 in JEE Mains, reflecting consistent preparation,
+           strong analytical ability, and proficiency in physics, chemistry, and mathematics. 
+           This achievement showcases dedication, focus, and a solid foundation in core engineering concepts."
+        />
+
+          <ResumeCard
+            title="94.33 Percentile in Naukri Campus Young Turks"
+            subTitle="Excelling in Analytical Skills"
             result="Success"
-            des="Pioneered a digital transformation strategy that modernized the company’s
-             IT infrastructure. This initiative streamlined operations and significantly 
-             improved system efficiency and reliability."
+            des="Secured 94.33 percentile in the Naukri Campus Young Turks analytical test, 
+            demonstrating strong problem-solving, logical reasoning, and quick decision-making skills.
+             Achieved this without any prior preparation, reflecting natural aptitude and analytical ability."
+
           />
           <ResumeCard
-            title="Data-Driven Decision Making"
-            subTitle="Implemented analytics for strategic insights."
+            title="LeetCode 1719+"
+            subTitle="40+ Contests | 600+ Problems Solved"
             result="Success"
-            des="Developed and integrated advanced analytics tools that provided actionable 
-            insights, enabling data-driven decision-making across departments and enhancing 
-            overall operational efficiency."
+            des="Actively participated in over 40 competitive coding contests on LeetCode, 
+            consistently challenging myself with diverse algorithmic and data structure problems.
+             Solved around 600 problems ranging from easy to advanced difficulty, achieving a maximum 
+             rating of 11719. This rigorous practice has significantly enhanced my problem-solving, optimization, 
+             and analytical skills, while improving coding efficiency, logical reasoning, and performance under 
+             time constraints, demonstrating strong competitive programming expertise."
+
           />
           <ResumeCard
-            title="Global Partnership Development"
-            subTitle="Forged strategic alliances internationally."
+            title="CodeChef 1540+"
+            subTitle="10+ Contests | 200+ Problems Solved"
             result="Success"
-            des="Collaborated with global industry leaders to expand market reach, 
-            foster innovation, and elevate the brand's reputation through key strategic
-             partnerships."
-          />
-          <ResumeCard
-            title="Innovation in Product Design"
-            subTitle="Introduced cutting-edge product features."
-            result="Success"
-            des="Led the design and launch of innovative product features that 
-            redefined user experiences, resulting in increased customer engagement 
-            and a competitive edge in the market."
+            des="Actively participated in over 10 competitive coding contests on CodeChef,
+             tackling a wide range of algorithmic and data structure challenges.
+              Solved more than 200 problems, ranging from easy to advanced difficulty,
+               which strengthened my problem-solving, optimization, and analytical skills.
+                This consistent practice has enhanced my coding efficiency, logical thinking,
+                 and ability to perform under time constraints, reflecting strong competitive programming expertise."
+
+            
+
           />
         </div>
       </div>

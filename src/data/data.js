@@ -6,15 +6,16 @@ import { SiProgress, SiAntdesign } from "react-icons/si";
 export const featuresData = [
   {
     id: 1,
-    title: "Web Development",
-    des: "Excellent in creating responsive and user-friendly websites using modern technologies.",
+    icon: <AiFillAppstore />,
+    title: "Competetive Coding",
+    des: "Passionate about competitive coding, as it sharpens my analytical thinking and strengthens problem-solving abilities.💻✨",
   },
   {
     id: 2,
-    icon: <AiFillAppstore />,
-    title: "App Development",
-    des: "Excellent in building mobile applications for both iOS and Android platforms.",
+    title: "Web Development",
+    des: "Excellent in creating responsive and user-friendly websites using modern technologies.",
   },
+  
   {
     id: 3,
     icon: <SiProgress />,
@@ -24,8 +25,8 @@ export const featuresData = [
   {
     id: 4,
     icon: <FaMobile />,
-    title: "Mobile Development",
-    des: "Excellent in creating mobile-first designs and responsive layouts for optimal user experience.",
+    title: "Guidance & Counselling Specialist",
+    des: "Guiding students toward academic excellence and tech mastery through mentorship and practical experience.",
   },
   {
     id: 5,

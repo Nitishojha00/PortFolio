@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layout/Title'
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, astrology , rps , employee, ise } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -17,48 +17,12 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="SCHOOL MANAGEMENT SYSTEM"
+          title="COLLEGE MANAGEMENT SYSTEM"
           des="An all-inclusive system designed for academic institutions.
           This platform streamlines student enrollment, attendance tracking,
           grade management, and communication between staff, teachers, and students."
           src={projectOne}
-          githubLink="https://github.com/daniel-ndeto/school-management-system.git" // Replace with actual link
-          liveLink="https://school-management-system-hazel-eta.vercel.app" // Replace with actual link or remove if no live site
-        />
-        <ProjectsCard
-          title="E-commerce Website"
-          des="A fully responsive online store offering secure payment integration,
-          efficient inventory management, and an intuitive user interface that delivers
-           a seamless shopping experience for customers."
-          src={projectTwo}
-          githubLink="https://github.com/daniel-ndeto/tech-lab97-ecommerce-app.git" // Replace with actual link
-          liveLink="https://your-ecommerce-live-url.com" // Replace with actual link
-        />
-        <ProjectsCard
-          title="Chatting App"
-          des="A real-time messaging application that supports one-to-one and group chats,
-          media sharing, and push notifications. Built with modern web technologies to enable
-          instantaneous communication."
-          src={projectThree}
-          githubLink="https://github.com/daniel-ndeto/AmigoChat-Realtime-Chat-Application.git" // Replace with actual link
-          liveLink="https://amigochat.netlify.app/" // Replace with actual link or remove if no live site
-        />
-        <ProjectsCard
-          title="TRAVEL BOOKING APP"
-          des="An intuitive travel platform that simplifies the search and booking of flights,
-          hotels, and tours. Emphasizing personalization, it offers users tailored travel
-          recommendations and streamlined booking processes."
-          src={projectThree} // Consider using a different image if available
-          githubLink="https://github.com/yourusername/travel-booking-app" // Replace with actual link
-          liveLink="https://your-travel-app-live-url.com" // Replace with actual link
-        />
-        <ProjectsCard
-          title="COLLEGE MANAGEMENT SYSTEM"
-          des="A robust portal tailored for higher education institutions.
-          It facilitates course scheduling, faculty coordination, student information
-          management, and streamlines day-to-day administrative tasks."
-          src={projectOne} // Consider using a different image if available
-          githubLink="https://github.com/yourusername/college-management-system" // Replace with actual link
+          githubLink="#" // Replace with actual link
           liveLink="#" // Replace with actual link or remove if no live site
         />
         <ProjectsCard
@@ -68,9 +32,45 @@ const Projects = () => {
            materials, real-time progress tracking, assessments, and comprehensive reporting
            for educators."
           src={projectTwo} // Consider using a different image if available
-          githubLink="https://github.com/yourusername/lms-system" // Replace with actual link
-          liveLink="https://your-lms-live-url.com" // Replace with actual link
+          githubLink="#" // Replace with actual link
+          liveLink="#" // Replace with actual link
         />
+        <ProjectsCard
+          title="Image Search Engine"
+          des="A React-based image search engine using the Unsplash API to deliver high-quality, copyright-free images instantly.
+           It highlights smooth UI, efficient API integration, and a seamless user experience."
+          src={ise}
+          githubLink="https://github.com/Nitishojha00/Image-Search-Engine" // Replace with actual link
+          liveLink="https://image-search-engine-sigma-sand.vercel.app/" // Replace with actual link
+        />
+        <ProjectsCard
+          title="EMPLOYEE DATABASE MANAGEMENT SYSTEM"
+          des="A web-based project built with HTML, CSS, and JavaScript to strengthen my web development fundamentals.
+           It enables users to add and manage employee records with a clean UI and dynamic, 
+           interactive experience showcasing strong front-end skills."
+          src={employee} // Consider using a different image if available
+          githubLink="https://github.com/Nitishojha00/Employee-Database-Management-System" // Replace with actual link
+          liveLink="https://employee-database-management-system-nu.vercel.app/" // Replace with actual link or remove if no live site
+        />
+        <ProjectsCard
+          title="Astrology App"
+          des="A web project that provides daily horoscopes and astrological insights, built with HTML, CSS, and JavaScript.
+              It features a clean design and interactive user experience for easy navigation.."
+          src={astrology}
+          githubLink="https://github.com/Nitishojha00/Astrology_App" // Replace with actual link
+          liveLink="https://astrologyapp-five.vercel.app/" // Replace with actual link or remove if no live site
+        />
+        <ProjectsCard
+          title="Tic Tac Toe"
+          des="A web project that expertly manages player turns and coordination,
+           a task deceptively complex to handle. Despite its simple appearance, 
+          it demonstrates strong logic implementation, problem-solving, and front-end development skills."
+          src={rps} // Consider using a different image if available
+          githubLink="https://github.com/Nitishojha00/Tic_Tac_Toe_Game" // Replace with actual link
+          liveLink="https://tictactoegame-tan-two.vercel.app/" // Replace with actual link
+        />
+        
+        
       </div>
     </section>
   );

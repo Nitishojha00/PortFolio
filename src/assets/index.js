@@ -6,6 +6,10 @@ import bannerImg from "./images/unnamed.jpg";
 
 // Importing images for different projects
 import projectOne from "./images/projects/projectOne.jpg";
+import rps from "./images/projects/rps.webp";
+import ise from "./images/projects/ise.png";
+import employee from "./images/projects/employee.png";
+import astrology from "./images/projects/astrology.jpg";
 import projectTwo from "./images/projects/projectTwo.jpg";
 import projectThree from "./images/projects/projectThree.jpeg";
 
@@ -30,4 +34,8 @@ export {
   testimonialThree,
   quote,
   contactImg,
+  rps,
+  employee,
+  astrology,
+  ise,
 };

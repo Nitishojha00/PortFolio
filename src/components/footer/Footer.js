@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
         {/* <img className="w-32" src={logo} alt="logo" /> */}
-        <span class="text-lg font-bold">Nitish Ojha</span>
+        <span className="text-lg font-bold">Nitish Ojha</span>
         <div className="flex gap-4">
           <a href="https://www.facebook.com/profile.php?id=100089983091610" target="_blank">
           <span className="bannerIcon">
