@@ -17,23 +17,21 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="COLLEGE MANAGEMENT SYSTEM"
-          des="An all-inclusive system designed for academic institutions.
-          This platform streamlines student enrollment, attendance tracking,
-          grade management, and communication between staff, teachers, and students."
+          title="Portfolio"
+          des="A modern, responsive portfolio built with React and Tailwind CSS, showcasing projects, skills, and achievements.
+           It features smooth navigation, interactive UI, and a clean professional design.."
           src={projectOne}
-          githubLink="#" // Replace with actual link
-          liveLink="#" // Replace with actual link or remove if no live site
+          githubLink="https://github.com/Nitishojha00/PortFolio" // Replace with actual link
+          liveLink="#Home" // Replace with actual link or remove if no live site
         />
         <ProjectsCard
-          title="LMS SYSTEM"
-          des="A feature-rich Learning Management System (LMS) designed to enhance
-           online education. It offers interactive course
-           materials, real-time progress tracking, assessments, and comprehensive reporting
-           for educators."
+          title="Social Posting App"
+          des="A full-featured social posting app with authentication and authorization, using cookies for secure login.
+           It supports CRUD operations and
+           lets users upload post images using Multer, ensuring secure and seamless content sharing."
           src={projectTwo} // Consider using a different image if available
-          githubLink="#" // Replace with actual link
-          liveLink="#" // Replace with actual link
+          githubLink="https://github.com/Nitishojha00/SocialPostingApp" // Replace with actual link
+          liveLink="https://social-post-app-urni.onrender.com/user/login" // Replace with actual link
         />
         <ProjectsCard
           title="Image Search Engine"
