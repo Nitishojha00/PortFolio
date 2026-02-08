@@ -6,17 +6,17 @@ import Media from './Media';
 const LeftBanner = () => {
     const [text] = useTypewriter({
       words: [
-        "Professional Coder.",
-        "Full Stack Developer.",
-        "UI Designer.",
-        "Web Developer.",
-        "Software Engineer.",
-        "React Developer.",
-        "Frontend Developer.",
-        "Backend Developer.",
-        "Tech Enthusiast.",
-        "Creative Coder.",
-        "Digital Thinker.",
+        // "Professional Coder.",
+        // "Full Stack Developer.",
+        // "UI Designer.",
+        // "Web Developer.",
+        // "Software Engineer.",
+        // "React Developer.",
+        // "Frontend Developer.",
+        // "Backend Developer.",
+        // "Tech Enthusiast.",
+        // "Creative Coder.",
+        // "Digital Thinker.",
       ],
       loop: true,
       typeSpeed: 20,
@@ -36,17 +36,15 @@ const LeftBanner = () => {
             <span className="text-designColor capitalize">Nitish Ojha</span>
           </h1>
           <h2 className="text-4xl font-bold text-pink">
-            a <span>{text}</span>
-            <Cursor
+             <span>{text}</span>
+            {/* <Cursor
               cursorBlinking="false"
               cursorStyle="|*"
               cursorColor="#ff014f"
-            />
+            /> */}
           </h2>
           <p className="text-base font-bodyFont leading-6 tracking-wide">
-  I believe in transforming ideas into experiences that resonate. By seamlessly integrating subtle animations and intuitive design,
-  I create interfaces that captivate and guide users effortlessly. Every project is an opportunity to
-  blend creativity with robust code,ensuring that digital experiences are as delightful as they are functional.
+            I strongly believe in myself — when a challenge comes my way, I take full ownership and deliver results with determination and consistency. I am passionate about learning new technologies and continuously expanding my skill set. Exploring emerging tools and frameworks excites me, and I constantly push myself beyond my comfort zone to grow. I am always open to new opportunities where I can learn, contribute, and make an impact.
           </p>
         </div>
         <Media />

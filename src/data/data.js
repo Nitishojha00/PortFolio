@@ -1,43 +1,44 @@
 import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe} from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { FaMobile, FaGlobe } from "react-icons/fa";
+import { SiProgress } from "react-icons/si";
+import { FaComputer } from "react-icons/fa6";
 
 // Features Data
 export const featuresData = [
   {
     id: 1,
     icon: <AiFillAppstore />,
-    title: "Competetive Coding",
-    des: "Passionate about competitive coding, as it sharpens my analytical thinking and strengthens problem-solving abilities.💻✨",
+    title: "Competitive Coding",
+    des: "Actively engaged in competitive programming to sharpen analytical thinking and master advanced problem-solving techniques.",
   },
   {
     id: 2,
+    icon: <FaGlobe />,
     title: "Web Development",
-    des: "Excellent in creating responsive and user-friendly websites using modern technologies.",
+    des: "Building scalable, responsive, and high-performance web applications using modern development practices.",
   },
-  
   {
     id: 3,
     icon: <SiProgress />,
     title: "MERN Stack Development",
-    des: "Excellent in developing full-stack web applications using MongoDB, Express, React, and Node.js.",
+    des: "Developing robust full-stack applications using MongoDB, Express, React, and Node.js with clean architecture principles.",
   },
   {
     id: 4,
-    icon: <FaMobile />,
-    title: "Guidance & Counselling Specialist",
-    des: "Guiding students toward academic excellence and tech mastery through mentorship and practical experience.",
+    icon: <FaComputer />,
+    title: "Strong CS Core",
+    des: "Strong foundation in Data Structures, Algorithms, DBMS, Operating Systems, and Computer Networks.",
   },
   {
     id: 5,
-    icon: <SiAntdesign />,
-    title: "UX Design",
-    des: "Excellent in designing intuitive and visually appealing user interfaces for web and mobile applications.",
+    icon: <FaMobile />,
+    title: "Mentorship & Guidance",
+    des: "Mentoring students in technical subjects and competitive programming with a focus on practical understanding.",
   },
   {
     id: 6,
     icon: <FaGlobe />,
-    title: "Hosting Websites",
-    des: "Excellent in deploying and managing websites on various hosting platforms.",
+    title: "Deployment & Hosting",
+    des: "Deploying and managing web applications on cloud and hosting platforms with performance optimization.",
   },
 ];

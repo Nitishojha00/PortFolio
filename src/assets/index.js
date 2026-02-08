@@ -12,6 +12,8 @@ import employee from "./images/projects/employee.png";
 import astrology from "./images/projects/astrology.jpg";
 import projectTwo from "./images/projects/projectTwo.jpg";
 import projectThree from "./images/projects/projectThree.jpeg";
+import talksy from "./images/projects/chatApp.png";
+import codo from "./images/projects/cod.png";
 
 // Importing testimonial-related images
 import testimonialOne from "./images/testimonial/testimonialOne.jpeg";
@@ -32,6 +34,8 @@ export {
   testimonialOne,
   testimonialTwo,
   testimonialThree,
+  talksy,
+  codo,
   quote,
   contactImg,
   rps,

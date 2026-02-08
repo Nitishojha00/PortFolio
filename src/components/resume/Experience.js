@@ -1,5 +1,5 @@
 import React from "react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import ResumeCard from "./ResumeCard";
 
 const Experience = () => {
@@ -11,30 +11,33 @@ const Experience = () => {
     >
       <div>
         <div className="flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2023 - current</p>
-          <h2 className="text-4xl font-bold">Self Experience</h2>
+          <p className="text-sm text-designColor tracking-[4px]">
+            2025 - Present
+          </p>
+          <h2 className="text-4xl font-bold">Experience</h2>
         </div>
-        <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+
+        <div className="mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+
           <ResumeCard
-            title="Web Developer"
-            subTitle="Rohit Negi Nexus"
-            result="Successfully Completed"
-            des="Completed all web development lectures and hands-on projects, gaining solid practical experience. Currently expanding skills into blockchain development."
+            title="Backend Developer"
+            subTitle="E-Cell, Dr. Ambedkar Institute of Technology for Divyangjan"
+            result="Sep 2025 - Jan 2026"
+            des="Developed secure and scalable RESTful APIs using Node.js and Express with JWT-based authentication and role-based authorization. Designed and optimized MongoDB and SQL schemas with indexing and query optimization to improve performance. Architected backend deployment across multiple servers with load balancing using round-robin strategy to enhance system reliability and efficiency."
           />
 
           <ResumeCard
-          title="Competitive Programmer"
-          subTitle="Self"
-          result="Intermediate Level"
-          des="Experienced in C++, STL, and OOP concepts with in-depth understanding. Able to solve 2–3 problems per contest on LeetCode and other competitive programming platforms."
-        />
+            title="Internshala Student Partner (ISP)"
+            subTitle="Internshala | Selected Representative"
+            result="Jan 2026 (1 Month)"
+            des="Selected for the Internshala Student Partner program to represent and promote internship and training opportunities within the campus. Led outreach initiatives, increased student engagement, and contributed to strengthening the internship ecosystem at the institutional level."
+          />
+
 
         </div>
       </div>
-     
     </motion.div>
   );
 };
 
 export default Experience;
-

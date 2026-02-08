@@ -1,7 +1,17 @@
-import React from 'react'
-import Title from '../layout/Title'
-import { projectOne, projectTwo, projectThree, astrology , rps , employee, ise } from "../../assets/index";
-import ProjectsCard from './ProjectsCard';
+import React from "react";
+import Title from "../layout/Title";
+import {
+  projectOne,
+  projectTwo,
+  projectThree,
+  astrology,
+  talksy,
+  codo,
+  rps,
+  employee,
+  ise,
+} from "../../assets/index";
+import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   return (
@@ -15,63 +25,64 @@ const Projects = () => {
           des="My Projects"
         />
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+
+       <ProjectsCard
+        title="Cod_Trakr"
+        des="Built a scalable competitive coding tracker with OTP-based authentication and secure cookie-based authorization. Implemented backend and frontend caching with TTL-based expiration to optimize performance and prevent OTP abuse. Added request limiting and API-level validation to enhance security against spam and DDoS-style attacks. Integrated load balancing for better scalability, along with performance analytics and personal notes feature within a clean, user-friendly interface."
+        src={codo}
+        githubLink="https://github.com/Nitishojha00/COD_TRAKR"
+        liveLink="https://codolio-clone.vercel.app/"
+      />
+
+
+
         <ProjectsCard
-          title="Portfolio"
-          des="A modern, responsive portfolio built with React and Tailwind CSS, showcasing projects, skills, and achievements.
-           It features smooth navigation, interactive UI, and a clean professional design.."
-          src={projectOne}
-          githubLink="https://github.com/Nitishojha00/PortFolio" // Replace with actual link
-          liveLink="#Home" // Replace with actual link or remove if no live site
-        />
+        title="Talksy – Real-Time Chat Application"
+        des="Developed a scalable real-time chat application using the MERN stack and Socket.io. Implemented JWT-based authentication and authorization with secure session handling. Upgraded from native WebSockets to Socket.io for automatic fallback to long polling, ensuring reliable cross-browser connectivity. Added ping-pong heartbeat mechanism to maintain active connections and improve reliability. Supports unlimited group members with smooth real-time messaging and a clean, responsive UI."
+        src={talksy}
+        githubLink="https://github.com/Nitishojha00/Talksy"
+        liveLink="https://talksy-chi.vercel.app/signin"
+      />
+
+
+       <ProjectsCard
+        title="Leetcode Backend"
+        des="Engineered a scalable LeetCode-like backend system with JWT-based authentication and role-based access control (separate Admin and User permissions). Designed secure REST APIs with rate limiting, API-level validation, and structured error handling. Implemented problem CRUD management, submission tracking, and real-time code execution via Judge0 integration. Integrated Gemini API for AI-powered hints and assistance. Optimized performance using caching strategies and performed comprehensive end-to-end backend testing to ensure reliability and security."
+        src={projectOne}
+      />
+
+
+
+
         <ProjectsCard
-          title="Social Posting App"
-          des="A full-featured social posting app with authentication and authorization, using cookies for secure login.
-           It supports CRUD operations and
-           lets users upload post images using Multer, ensuring secure and seamless content sharing."
-          src={projectTwo} // Consider using a different image if available
-          githubLink="https://github.com/Nitishojha00/SocialPostingApp" // Replace with actual link
-          liveLink="https://social-post-app-urni.onrender.com/user/login" // Replace with actual link
+          title="Social Posting Application"
+          des="A secure full-stack social platform with authentication, authorization, and image uploads using Multer. Implements complete CRUD functionality with production-ready deployment."
+          src={projectTwo}
+          githubLink="https://github.com/Nitishojha00/SocialPostingApp"
+          liveLink="https://social-post-app-urni.onrender.com/user/login"
         />
+
+        <ProjectsCard
+          title="Employee Database Management System"
+          des="A web-based employee management system built using HTML, CSS, and JavaScript. Enables efficient record management with dynamic UI updates, structured data handling, and strong front-end fundamentals."
+          src={employee}
+          githubLink="https://github.com/Nitishojha00/Employee-Database-Management-System"
+          liveLink="https://employee-database-management-system-nu.vercel.app/"
+        />
+
         <ProjectsCard
           title="Image Search Engine"
-          des="A React-based image search engine using the Unsplash API to deliver high-quality, copyright-free images instantly.
-           It highlights smooth UI, efficient API integration, and a seamless user experience."
+          des="A React-based application integrated with the Unsplash API to fetch high-quality images instantly. Demonstrates efficient API handling, optimized rendering, and clean UI design."
           src={ise}
-          githubLink="https://github.com/Nitishojha00/Image-Search-Engine" // Replace with actual link
-          liveLink="https://image-search-engine-sigma-sand.vercel.app/" // Replace with actual link
+          githubLink="https://github.com/Nitishojha00/Image-Search-Engine"
+          liveLink="https://image-search-engine-sigma-sand.vercel.app/"
         />
-        <ProjectsCard
-          title="EMPLOYEE DATABASE MANAGEMENT SYSTEM"
-          des="A web-based project built with HTML, CSS, and JavaScript to strengthen my web development fundamentals.
-           It enables users to add and manage employee records with a clean UI and dynamic, 
-           interactive experience showcasing strong front-end skills."
-          src={employee} // Consider using a different image if available
-          githubLink="https://github.com/Nitishojha00/Employee-Database-Management-System" // Replace with actual link
-          liveLink="https://employee-database-management-system-nu.vercel.app/" // Replace with actual link or remove if no live site
-        />
-        <ProjectsCard
-          title="Astrology App"
-          des="A web project that provides daily horoscopes and astrological insights, built with HTML, CSS, and JavaScript.
-              It features a clean design and interactive user experience for easy navigation.."
-          src={astrology}
-          githubLink="https://github.com/Nitishojha00/Astrology_App" // Replace with actual link
-          liveLink="https://astrologyapp-five.vercel.app/" // Replace with actual link or remove if no live site
-        />
-        <ProjectsCard
-          title="Tic Tac Toe"
-          des="A web project that expertly manages player turns and coordination,
-           a task deceptively complex to handle. Despite its simple appearance, 
-          it demonstrates strong logic implementation, problem-solving, and front-end development skills."
-          src={rps} // Consider using a different image if available
-          githubLink="https://github.com/Nitishojha00/Tic_Tac_Toe_Game" // Replace with actual link
-          liveLink="https://tictactoegame-tan-two.vercel.app/" // Replace with actual link
-        />
-        
-        
+
       </div>
     </section>
   );
-}
+};
 
-export default Projects
+export default Projects;
