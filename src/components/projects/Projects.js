@@ -33,7 +33,7 @@ const Projects = () => {
         des="Built a scalable competitive coding tracker with OTP-based authentication and secure cookie-based authorization. Implemented backend and frontend caching with TTL-based expiration to optimize performance and prevent OTP abuse. Added request limiting and API-level validation to enhance security against spam and DDoS-style attacks. Integrated load balancing for better scalability, along with performance analytics and personal notes feature within a clean, user-friendly interface."
         src={codo}
         githubLink="https://github.com/Nitishojha00/COD_TRAKR"
-        liveLink="https://codolio-clone.vercel.app/"
+        liveLink="https://codtrakr.nitishojha.in/"
       />
 
 
