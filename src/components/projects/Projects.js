@@ -43,7 +43,7 @@ const Projects = () => {
         des="Developed a scalable real-time chat application using the MERN stack and Socket.io. Implemented JWT-based authentication and authorization with secure session handling. Upgraded from native WebSockets to Socket.io for automatic fallback to long polling, ensuring reliable cross-browser connectivity. Added ping-pong heartbeat mechanism to maintain active connections and improve reliability. Supports unlimited group members with smooth real-time messaging and a clean, responsive UI."
         src={talksy}
         githubLink="https://github.com/Nitishojha00/Talksy"
-        liveLink="https://talksy-chi.vercel.app/signin"
+        liveLink="https://talksy.nitishojha.in"
       />
 
 
