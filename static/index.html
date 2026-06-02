@@ -86,7 +86,7 @@
 
     /* ABOUT */
     #about { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: center; border-bottom: 1px solid var(--border); }
-    .about-text p { color: #f3f2f2; margin-bottom: 1rem; }
+    .about-text p {color: var(--muted); margin-bottom: 1rem;}
     .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     .stat-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
     .stat-num { font-family: 'DM Serif Display', serif; font-size: 2.4rem; color: var(--accent); line-height: 1; }
@@ -94,13 +94,79 @@
     .section-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
     .section-title { font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.15; margin-bottom: 1.5rem; }
 
-    /* SKILLS */
-    #skills { border-bottom: 1px solid var(--border); }
-    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
-    .skill-pill { display: flex; align-items: center; gap: 0.5rem; padding: 10px 18px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 100px; font-size: 0.88rem; transition: all 0.2s; cursor: default; }
-    .skill-pill:hover { border-color: var(--accent); background: var(--accent-light); color: var(--accent); transform: translateY(-2px); }
+  /* SKILLS */
+    #skills {
+      border-bottom: 1px solid var(--border);
+    }
 
-    /* PROJECTS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+    }
+
+    .skill-category {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1rem;
+      transition: 0.25s ease;
+    }
+
+    .skill-category:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+
+    .skill-category h3 {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .skill-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .skill-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px 12px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.85rem;
+      transition: 0.25s ease;
+      cursor: default;
+    }
+
+    .skill-pill:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+
+    /* Laptop */
+    @media (max-width: 1200px) {
+      .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 700px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+/* PROJECTS */
     #projects { border-bottom: 1px solid var(--border); }
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
     .project-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; transition: all 0.25s; position: relative; overflow: hidden; }
@@ -167,7 +233,7 @@
 
   <section id="hero">
     <div class="hero-text">
-      <span class="hero-tag">B.Tech CSE · 3rd Year</span>
+      <span class="hero-tag">Competetive Programmer .  Full Stack Devloper</span>
       <h1 class="hero-name">Hi, I'm <em>Nitish Ojha</em><br>& I build things.</h1>
       <p class="hero-sub">A Competitive Programmer and Full Stack Developer passionate about solving complex problems, building scalable web applications, and continuously improving through learning and development.
 </p>
@@ -184,124 +250,125 @@
   </section>
 
   <section id="about">
-    <div class="about-text reveal">
-      <p class="section-label">About Me</p>
-      <h2 class="section-title">Curious mind,<br>curious code.</h2>
-      <p>I'm a 3rd-year B.Tech Computer Science student with a love for building software that solves real problems. I enjoy working across the stack — from writing algorithms to designing user interfaces.</p>
-      <p>When I'm not coding, you'll find me exploring new technologies, contributing to projects, or preparing for my next internship opportunity.</p>
-      <a href="#contact" class="btn btn-outline" style="margin-top:1.5rem; display:inline-block;">Let's Connect →</a>
+  <div class="about-text reveal">
+    <p class="section-label">About Me</p>
+    <h2 class="section-title">Software Developer<br>who loves building impactful products.</h2>
+
+    <p>
+      I'm a final-year B.Tech Computer Science engineer passionate about
+      full-stack development, backend systems, and problem solving. I enjoy
+      building scalable applications that combine clean architecture with
+      great user experience.
+    </p>
+
+    <p>
+      I actively work on real-world projects, explore modern technologies,
+      and continuously improve my development and DSA skills while preparing
+      for software engineering opportunities.
+    </p>
+
+    <a href="#contact" class="btn btn-outline"
+      style="margin-top:1.5rem; display:inline-block;">
+      Let's Connect →
+    </a>
+  </div>
+
+  <div class="about-stats reveal">
+    <div class="stat-card">
+      <div class="stat-num">Final</div>
+      <div class="stat-desc">Year B.Tech CSE</div>
     </div>
-    <div class="about-stats reveal">
-      <div class="stat-card"><div class="stat-num">3rd</div><div class="stat-desc">Year B.Tech CSE</div></div>
-      <div class="stat-card"><div class="stat-num">6+</div><div class="stat-desc">Skills & Technologies</div></div>
-      <div class="stat-card"><div class="stat-num">5+</div><div class="stat-desc">Projects Built</div></div>
-      <div class="stat-card"><div class="stat-num">∞</div><div class="stat-desc">Things Left to Learn</div></div>
+
+    <div class="stat-card">
+      <div class="stat-num">10+</div>
+      <div class="stat-desc">Technologies & Tools</div>
     </div>
-  </section>
 
-  <section id="skills">
-    <div class="reveal">
-  <p class="section-label">Skills</p>
-  <h2 class="section-title">My Toolbox</h2>
-</div>
-
-    <div class="skills-grid reveal">
-
-      <!-- Programming -->
-      <div class="skill-category">
-        <h3>💻 Programming</h3>
-        <div class="skill-list">
-          <div class="skill-pill">⚡ C / C++</div>
-          <div class="skill-pill">🐍 Python</div>
-          <div class="skill-pill">🟨 JavaScript</div>
-        </div>
-      </div>
-
-      <!-- Web Development -->
-      <div class="skill-category">
-        <h3>🌐 Web Development</h3>
-        <div class="skill-list">
-          <div class="skill-pill">🌐 HTML & CSS</div>
-          <div class="skill-pill">⚛️ React</div>
-          <div class="skill-pill">🎨 Tailwind CSS</div>
-          <div class="skill-pill">🔗 REST API</div>
-          <div class="skill-pill">🔄 Axios / Fetch</div>
-        </div>
-      </div>
-
-      <!-- Backend -->
-      <div class="skill-category">
-        <h3>🛠️ Backend</h3>
-        <div class="skill-list">
-          <div class="skill-pill">💻 Node.js</div>
-          <div class="skill-pill">🚀 Express.js</div>
-          <div class="skill-pill">🔐 JWT Auth</div>
-          <div class="skill-pill">📬 Postman</div>
-          <div class="skill-pill">🔌 WebSocket</div>
-        </div>
-      </div>
-
-      <!-- Database -->
-      <div class="skill-category">
-        <h3>🗄️ Database</h3>
-        <div class="skill-list">
-          <div class="skill-pill">🗃️ SQL</div>
-          <div class="skill-pill">🍃 MongoDB</div>
-          <div class="skill-pill">🐘 PostgreSQL</div>
-        </div>
-      </div>
-
-      <!-- Core CS -->
-      <div class="skill-category">
-        <h3>🧠 Core CS</h3>
-        <div class="skill-list">
-          <div class="skill-pill">💻 Data Structures</div>
-          <div class="skill-pill">🧠 Algorithms</div>
-          <div class="skill-pill">⚙️ OOPs</div>
-          <div class="skill-pill">🔗 Operating Systems</div>
-          <div class="skill-pill">🌐 Computer Networks</div>
-          <div class="skill-pill">🗄️ DBMS</div>
-        </div>
-      </div>
-
-      <!-- AI / ML -->
-      <div class="skill-category">
-        <h3>🤖 AI / ML</h3>
-        <div class="skill-list">
-          <div class="skill-pill">💻 Pandas</div>
-          <div class="skill-pill">💻 NumPy</div>
-          <div class="skill-pill">🧠 Machine Learning</div>
-          <div class="skill-pill">🧩 Langchain</div>
-          <div class="skill-pill">🤖 Agentic AI</div>
-          <div class="skill-pill">🧩 Prompt Engineering</div>
-          <div class="skill-pill">📡 RAG</div>
-        </div>
-      </div>
-
-      <!-- Cybersecurity -->
-      <div class="skill-category">
-        <h3>🔐 Cybersecurity</h3>
-        <div class="skill-list">
-          <div class="skill-pill">💻 Burp Suite</div>
-          <div class="skill-pill">🕵️ Web Security</div>
-          <div class="skill-pill">💣 OWASP Top 10</div>
-          <div class="skill-pill">🔍 Penetration Testing</div>
-        </div>
-      </div>
-
-      <!-- Tools -->
-      <div class="skill-category">
-        <h3>🧰 Tools</h3>
-        <div class="skill-list">
-          <div class="skill-pill">🌿 Git & GitHub</div>
-          <div class="skill-pill">💻 Linux</div>
-          <div class="skill-pill">🐳 Docker</div>
-          <div class="skill-pill">🚀 Deployment</div>
-        </div>
-      </div>
-
+    <div class="stat-card">
+      <div class="stat-num">5+</div>
+      <div class="stat-desc">Projects Built</div>
     </div>
-  </section>
+
+    <div class="stat-card">
+      <div class="stat-num">1300+</div>
+      <div class="stat-desc">DSA Problems Solved</div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="reveal">
+    <p class="section-label">Skills</p>
+    <h2 class="section-title">My Toolbox</h2>
+  </div>
+
+  <div class="skills-grid reveal">
+
+    <!-- Programming -->
+    <div class="skill-category">
+      <h3>💻 Programming</h3>
+      <div class="skill-list">
+        <div class="skill-pill">⚡ C++</div>
+        <div class="skill-pill">🟨 JavaScript</div>
+        <div class="skill-pill">🐍 Python </div>
+      </div>
+    </div>
+
+    <!-- Frontend -->
+    <div class="skill-category">
+      <h3>🌐 Frontend</h3>
+      <div class="skill-list">
+        <div class="skill-pill">🌐 HTML & CSS</div>
+        <div class="skill-pill">⚛️ React.js</div>
+        <div class="skill-pill">🎨 Tailwind CSS</div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skill-category">
+      <h3>🛠️ Backend</h3>
+      <div class="skill-list">
+        <div class="skill-pill">💻 Node.js</div>
+        <div class="skill-pill">🚀 Express.js</div>
+        <div class="skill-pill">🔗 REST API</div>
+        <div class="skill-pill">🔐 JWT Auth</div>
+      </div>
+    </div>
+
+    <!-- Database -->
+    <div class="skill-category">
+      <h3>🗄️ Database</h3>
+      <div class="skill-list">
+        <div class="skill-pill">🍃 MongoDB</div>
+        <div class="skill-pill">🐘 PostgreSQL</div>
+        <div class="skill-pill">🗃️ SQL</div>
+      </div>
+    </div>
+
+    <!-- Core CS -->
+    <div class="skill-category">
+      <h3>🧠 Core CS</h3>
+      <div class="skill-list">
+        <div class="skill-pill">💻 Data Structures & Algorithms</div>
+        <div class="skill-pill">⚙️ OOPs</div>
+        <div class="skill-pill">🗄️ DBMS</div>
+        <div class="skill-pill">🌐 Computer Networks</div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-category">
+      <h3>🧰 Tools</h3>
+      <div class="skill-list">
+        <div class="skill-pill">🌿 Git & GitHub</div>
+        <div class="skill-pill">💻 Linux</div>
+        <div class="skill-pill">🐳 Docker</div>
+        <div class="skill-pill">🚀 Deployment</div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <section id="projects">
   <div class="reveal">
